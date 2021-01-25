@@ -1,0 +1,85 @@
+****************************Steps to Create ES6 Project with node js********************************************************
+
+Step 1: 
+
+Create ES6ProjectWorkSpace folder in any local drive
+
+Step 2: 
+
+Open cmd in  ES6ProjectWorkspace folder, enter below command:
+
+npm init
+
+Step 2:
+
+npm install --save webpack
+npm install --save-dev webpack-cli
+
+Step 3:
+
+Create 'app' folder and main.js in app folder
+
+step 4: 
+
+create webpack.config.js file in root folder
+
+module.exports = {
+  entry: ["./app/main.js"],
+  output: {
+  filename: "bundle.js"
+ }
+}
+
+
+step 5: 
+
+add "build": "webpack" in package.json > scripts section
+
+step 6: 
+
+create index.html in ES6ProjectWorkSpace folder
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-  scale=1.0">
+  <title>ES6 Development Env</title>
+</head>
+<body>
+  <!-- Content Goes here -->
+</body>
+<script src="dist/bundle.js" type="text/javascript"></script>
+</html>
+
+
+step 7:
+
+npm run build
+
+step 8 : 
+
+npm install http-server
+
+add "start": "http-server" in package.json > scripts section
+
+step 9: 
+
+Build the project with webpack
+
+npm run build 
+
+step 10:
+
+Run the project on http-server 
+
+npm start
+
+step 11: 
+Now start creating couple of .js (javascript modules) files in ES6ProjectWorkSpace > app folder and create re-usable functions.
+
+Please refer below github repo for the ES6 initial setup code: 
+
+https://github.com/jarvis-codegeek/JavaScriptDemo
+
+*************************************************************END************************************************************************
