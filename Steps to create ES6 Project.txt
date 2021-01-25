@@ -13,7 +13,7 @@ npm init
 Step 2:
 
 npm install --save webpack
-npm install --save-dev webpack-cli
+npm install --save-dev webpack-cli babel-core babel-loader@7 babel-preset-es2015 clean-webpack-plugin
 
 Step 3:
 
